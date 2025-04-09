@@ -15,13 +15,13 @@ public class WebpageTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         Thread.sleep(2000);
-        driver.get("https://vinayakewit.github.io/SVIT-MavenDemo/");
+        driver.get("https://nakshatra-naksh.github.io/maven_exercise_1/");
     }
 
     @Test
     public void titleValidationTest() {
         String actualTitle = driver.getTitle();
-        String expectedTitle = "Tripillar Solutions";
+        String expectedTitle = "Sample Website";
         Assert.assertEquals(actualTitle, expectedTitle);
 
     }
